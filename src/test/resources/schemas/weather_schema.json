@@ -1,0 +1,167 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"title": "Weather Schema",
+	"default": {
+		
+	},
+	"required": [
+		"coord",
+		"weather",
+		"base",
+		"main",
+		"visibility",
+		"wind",
+		"clouds",
+		"dt",
+		"sys",
+		"id",
+		"name",
+		"cod"
+	],
+	"properties": {
+		"coord": {
+			"type": "object",
+			"required": [
+				"lon",
+				"lat"
+			],
+			"properties": {
+				"lon": {
+					"type": "number"
+				},
+				"lat": {
+					"type": "number"
+				}
+			}
+		},
+		"weather": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"id",
+					"main",
+					"description",
+					"icon"
+				],
+				"properties": {
+					"id": {
+						"type": "integer"
+					},
+					"main": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"icon": {
+						"type": "string"
+					}
+				}
+			}
+		},
+		"base": {
+			"type": "string"
+		},
+		"main": {
+			"type": "object",
+			"required": [
+				"temp",
+				"pressure",
+				"humidity",
+				"temp_min",
+				"temp_max"
+			],
+			"properties": {
+				"temp": {
+					"type": "number"
+				},
+				"pressure": {
+					"type": "integer"
+				},
+				"humidity": {
+					"type": "integer"
+				},
+				"temp_min": {
+					"type": "number"
+				},
+				"temp_max": {
+					"type": "number"
+				}
+			}
+		},
+		"visibility": {
+			"type": "integer"
+		},
+		"wind": {
+			"type": "object",
+			"required": [
+				"speed",
+				"deg"
+			],
+			"properties": {
+				"speed": {
+					"type": "number"
+				},
+				"deg": {
+					"type": "integer"
+				}
+			}
+		},
+		"clouds": {
+			"type": "object",
+			"required": [
+				"all"
+			],
+			"properties": {
+				"all": {
+					"type": "integer"
+				}
+			}
+		},
+		"dt": {
+			"type": "integer"
+		},
+		"sys": {
+			"type": "object",
+			"required": [
+				"type",
+				"id",
+				"message",
+				"country",
+				"sunrise",
+				"sunset"
+			],
+			"properties": {
+				"type": {
+					"type": "integer"
+				},
+				"id": {
+					"type": "integer"
+				},
+				"message": {
+					"type": "number"
+				},
+				"country": {
+					"type": "string"
+				},
+				"sunrise": {
+					"type": "integer"
+				},
+				"sunset": {
+					"type": "integer"
+				}
+			}
+		},
+		"id": {
+			"type": "integer"
+		},
+		"name": {
+			"type": "string"
+		},
+		"cod": {
+			"type": "integer"
+		}
+	}
+}
