@@ -6,6 +6,7 @@
  - Rest-Assured
  - TestNG
  - Maven
+ - Extent Reporter5
  
 
 ### Why to use Rest-Assured?
