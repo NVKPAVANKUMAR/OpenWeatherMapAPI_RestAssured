@@ -1,8 +1,12 @@
 package api.openweathermap.tests;
 
+import api.openweathermap.utils.ConfigParser;
 import org.testng.annotations.BeforeClass;
 import api.openweathermap.commom.Configuration;
 import io.restassured.RestAssured;
+
+import java.util.Objects;
+
 import static io.restassured.RestAssured.enableLoggingOfRequestAndResponseIfValidationFails;
 
 public class BaseTest {
