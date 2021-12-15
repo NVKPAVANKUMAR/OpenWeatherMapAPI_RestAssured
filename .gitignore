@@ -3,3 +3,4 @@ target/
 reports/
 .idea
 openweathermap-api-automation.iml
+.settings
